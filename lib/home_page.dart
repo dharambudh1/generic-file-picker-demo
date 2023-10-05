@@ -157,7 +157,10 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.zero,
                   itemCount: permanentFilesList.length,
                   itemBuilder: (BuildContext context, int index) {
-                    File file = permanentFilesList[index];
+                    // File file = permanentFilesList[index];
+                    final File file = permanentFilesList[index];
+                    const String lmt = "application/pdf";
+                    final bool isPDF = (lookupMimeType(file.path) ?? "") == lmt;
                     return Dismissible(
                       key: UniqueKey(),
                       onDismissed: (direction) {
@@ -186,6 +189,11 @@ class _HomePageState extends State<HomePage> {
                                       file.readAsBytesSync(),
                                     );
                                   },
+                                  decoration: isPDF
+                                      ? WidgetDecoration(
+                                          wrapperBgColor: Colors.white,
+                                        )
+                                      : null,
                                 ),
                               ),
                               const SizedBox(width: 10),
