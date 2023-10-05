@@ -1,16 +1,19 @@
-# share_demo
+# Generic File Picker Demo
 
-A new Flutter project.
+## Description:
+This represents a sample of a Generic File Picker.
 
-## Getting Started
+  - You have the ability to choose file types from the provided list of file categories, which includes:
+  
+    - Any Type
+    - Media Type
+    - Image Type
+    - Video Type
+    - Audio Type
+  
+  - In addition, you can view essential file details such as the thumbnail, name, extension, size (in bytes), and complete file path.
 
-This project is a starting point for a Flutter application.
+  - Please take note that the "Multi-select" feature allows you to pick multiple items simultaneously.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+![alt text](https://i.postimg.cc/7YBrjqXY/imgonline-com-ua-twotoone-Ot-MJr-VOLjjr3.png "img")
